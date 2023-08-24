@@ -14,5 +14,8 @@ export class HeaderComponent {
 
   public changeMobileNavigationVisibilityMode = (): void => {
     this.isMobileMenuOpened = !this.isMobileMenuOpened;
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.toggle('modalOpened');
+    window.scrollTo(0, 0)
   }
 }

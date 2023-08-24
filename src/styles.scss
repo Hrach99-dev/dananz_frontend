@@ -50,6 +50,14 @@ body {
   overflow-x: hidden;
 }
 
+body.modalOpened {
+  overflow-y: hidden;
+}
+
+body.modalOpened .root {
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   max-width: 1200px;
