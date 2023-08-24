@@ -1,0 +1,46 @@
+<div class="header">
+  <img class="header__logo" src="assets/images/logo.png" alt="Logo">
+  <div class="header__navigation web">
+    <ul class="header__navigation-block">
+      <li class="header__navigation-item">
+        <a href="/">Home</a>
+      </li>
+      <li class="header__navigation-item">
+        <a href="/about">About Us</a>
+      </li>
+      <li class="header__navigation-item">
+        <a href="/services">Services</a>
+      </li>
+      <li class="header__navigation-item">
+        <a href="/teams">Our Teams</a>
+      </li>
+    </ul>
+    <button class="header__contact">Contact Us</button>
+  </div>
+
+  <div class="header__navigation mobile" (click)="changeMobileNavigationVisibilityMode()">
+    <img src="assets/images/menu.png" alt="Menu Icon" class="mobile-icon">
+  </div>
+
+  <div class="popup" [class.opened]="isMobileMenuOpened">
+    <div class="overlay" (click)="changeMobileNavigationVisibilityMode()"></div>
+    <div class="navigation-popup">
+      <ul class="navigation-popup__block">
+        <li class="navigation-popup__block-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="navigation-popup__block-item">
+          <a href="/about">About Us</a>
+        </li>
+        <li class="navigation-popup__block-item">
+          <a href="/services">Services</a>
+        </li>
+        <li class="navigation-popup__block-item">
+          <a href="/teams">Our Teams</a>
+        </li>
+      </ul>
+      <button class="navigation-popup__contact">Contact Us</button>
+    </div>
+  </div>
+
+</div>
